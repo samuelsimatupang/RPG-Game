@@ -1,0 +1,15 @@
+#include "player.h"
+#include <iostream>
+
+
+
+void showInfoPlayer(const Player& player) {
+
+	std::cout << "Name: " << player.name << std::endl;
+	std::cout << "Role: " << player.role << std::endl;
+	std::cout << "Level: " << player.level << std::endl;
+	std::cout << "Health: " << player.healthPoint<< std::endl;
+	std::cout << "Mana: " << player.manaPoint << std::endl;
+
+	
+}
