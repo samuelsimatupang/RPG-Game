@@ -16,5 +16,5 @@ public:
 };
 
 void showInfoPlayer(const Player& player);
-
+int getHeal(const Player& player, int healthPoint, int totalHeal);
 #endif
