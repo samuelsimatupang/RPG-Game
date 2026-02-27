@@ -1,6 +1,11 @@
 #include "player.h"
 #include "Enemy.h"
 #include "main.h"
+#include "Randomize.h"
+
+int randomTime(int num);
+
+
 
 int chooseAction(int choiceNumber) {
 	choiceNumber;
@@ -21,6 +26,8 @@ int chooseAction(int choiceNumber) {
 int main() {
 	Player player1{ "Arthas", "Warrior", 10, 150, 50 };
 	Enemy enemy1{ "Goblin", 1, 25, 10, 5, 25 };
+
+	randomTime(0);
 
 	int choice = chooseAction(0);
 	if (choice == 1) {
