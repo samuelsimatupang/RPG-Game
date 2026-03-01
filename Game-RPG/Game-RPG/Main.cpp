@@ -27,7 +27,14 @@ int main() {
 	Player player1{ "Arthas", "Warrior", 10, 150, 50 };
 	Enemy enemy1{ "Goblin", 1, 25, 10, 5, 25 };
 
-	randomTime(0);
+	int random = randomTime(0);
+
+	if (random == 1) {
+		std::cout << "Enemy Appears!" << std::endl;
+	}
+	else {
+		std::cout << "Enemy does not appear!" << std::endl;
+	}
 
 	int choice = chooseAction(0);
 	if (choice == 1) {
